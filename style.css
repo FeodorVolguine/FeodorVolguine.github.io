@@ -34,49 +34,73 @@ img {
 }
 
 header .name {
-  width: 70%;
+  margin: auto;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 header .name .feodor, header .name .volguine {
   width: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header .name .volguine {
-  margin-top: 50px;
+  margin-top: 32px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header nav ul {
   list-style: none;
 }
 
-header nav ul li a {
-  padding: 70px 100px;
+header nav ul li {
+  margin: 50px;
 }
 
 header nav ul li .work {
+  padding: 100px;
   background: url("images/button-work.png") no-repeat;
+  background-size: contain;
 }
 
 header nav ul li .work:hover {
   background: url("images/button-work-pressed.png") no-repeat;
+  background-size: contain;
 }
 
 header nav ul li .projects {
+  padding: 30px 100px;
   background: url("images/button-projects.png") no-repeat;
+  background-size: contain;
 }
 
 header nav ul li .projects:hover {
   background: url("images/button-projects-pressed.png") no-repeat;
+  background-size: contain;
 }
 
 header nav ul li .contact {
+  padding: 30px 100px;
   background: url("images/button-contact.png") no-repeat;
+  background-size: contain;
 }
 
 header nav ul li .contact:hover {
   background: url("images/button-contact-pressed.png") no-repeat;
+  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */
