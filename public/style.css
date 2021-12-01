@@ -1,0 +1,82 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-family: Lato, sans-serif;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.thin-text {
+  font-weight: 300;
+}
+
+.bold-text {
+  font-weight: 700;
+}
+
+img {
+  width: 100%;
+}
+
+header .name {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header .name .feodor, header .name .volguine {
+  width: 50%;
+}
+
+header .name .volguine {
+  margin-top: 50px;
+}
+
+header nav ul {
+  list-style: none;
+}
+
+header nav ul li a {
+  padding: 70px 100px;
+}
+
+header nav ul li .work {
+  background: url("images/button-work.png") no-repeat;
+}
+
+header nav ul li .work:hover {
+  background: url("images/button-work-pressed.png") no-repeat;
+}
+
+header nav ul li .projects {
+  background: url("images/button-projects.png") no-repeat;
+}
+
+header nav ul li .projects:hover {
+  background: url("images/button-projects-pressed.png") no-repeat;
+}
+
+header nav ul li .contact {
+  background: url("images/button-contact.png") no-repeat;
+}
+
+header nav ul li .contact:hover {
+  background: url("images/button-contact-pressed.png") no-repeat;
+}
+/*# sourceMappingURL=style.css.map */
