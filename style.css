@@ -13,7 +13,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h2 {
@@ -29,78 +29,91 @@ h2 {
   font-weight: 700;
 }
 
-img {
-  width: 100%;
+header {
+  position: relative;
 }
 
-header .name {
-  margin: auto;
-  width: 50%;
+header .title {
+  padding: 0 1em;
+  font-family: Garamond, serif;
+  color: #91adc2ff;
+}
+
+header .toggle-button {
+  position: absolute;
+  width: 32px;
+  height: 24px;
+  top: 1rem;
+  right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header .name .feodor, header .name .volguine {
-  width: 50%;
-  -o-object-fit: contain;
-     object-fit: contain;
+header .toggle-button span {
+  width: 100%;
+  height: 3px;
+  background-color: #c1b8c8ff;
+  border-radius: 12px;
 }
 
-header .name .volguine {
-  margin-top: 32px;
+header .toggle-button:hover span {
+  background-color: #9ba0bcff;
 }
 
 header nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  display: none;
 }
 
 header nav ul {
+  padding: 0.25em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
 }
 
 header nav ul li {
-  margin: 50px;
+  margin: 0.5em 1em;
+  text-align: center;
 }
 
-header nav ul li .work {
-  padding: 100px;
-  background: url("images/button-work.png") no-repeat;
-  background-size: 190px;
+header nav ul li a {
+  padding: 0.25em 0;
+  text-decoration: none;
+  letter-spacing: 0.075em;
+  color: #c1b8c8ff;
 }
 
-header nav ul li .work:hover {
-  background: url("images/button-work-pressed.png") no-repeat;
-  background-size: contain;
+header nav ul li a:hover {
+  border-bottom: 2px solid #9ba0bcff;
+  color: #9ba0bcff;
 }
 
-header nav ul li .projects {
-  padding: 30px 100px;
-  background: url("images/button-projects.png") no-repeat;
-  background-size: contain;
+header nav.active {
+  display: block;
 }
 
-header nav ul li .projects:hover {
-  background: url("images/button-projects-pressed.png") no-repeat;
-  background-size: contain;
+section {
+  padding: 1.5em;
+  background-color: #7a8b99ff;
 }
 
-header nav ul li .contact {
-  padding: 30px 100px;
-  background: url("images/button-contact.png") no-repeat;
-  background-size: contain;
-}
-
-header nav ul li .contact:hover {
-  background: url("images/button-contact-pressed.png") no-repeat;
-  background-size: contain;
+section p {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

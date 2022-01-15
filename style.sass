@@ -1,11 +1,9 @@
-$palette-1: #4C5454
-$palette-2: #FF715B
-$palette-3: #1EA896
-$palette-4: #523F38
-
-$text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.4)
-
-$box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3)
+//Color palette
+$middle-blue-green: #a9ddd6ff
+$light-slate-gray: #7a8b99ff
+$pewter-blue: #91adc2ff
+$cool-grey: #9ba0bcff
+$lavender-gray: #c1b8c8ff
 
 html
     font-size: 100% 
@@ -23,7 +21,7 @@ body
 
 h1
     text-align: center
-    font-size: 3rem
+    font-size: 4rem
 
 h2
     text-align: center
@@ -34,57 +32,70 @@ h2
 .bold-text
     font-weight: 700
 
-img
-    width: 100%
-
 header
-    .name
-        margin: auto
-        width: 50%
-        display: flex
-        align-items: flex-start
+    position: relative
 
-        .feodor, .volguine
-            width: 50%
-            object-fit: contain
-        .volguine
-            margin-top: 32px 
+    .title
+        padding: 0 1em
+
+        font-family: Garamond, serif
+        color: $pewter-blue
+
+    .toggle-button
+        position: absolute
+        width: 32px
+        height: 24px
+        top: 1rem
+        right: 1rem
+        
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        span
+            width: 100%
+            height: 3px
+
+            background-color: $lavender-gray
+            border-radius: 12px
+
+    .toggle-button:hover span
+        background-color: $cool-grey
 
     nav
-        display: flex
-        justify-content: space-evenly
+        display: none
 
         ul
+            padding: 0.25em 0
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
             list-style: none
 
             li
-                margin: 50px
+                margin: 0.5em 1em
 
-                .work
-                    padding: 100px
-                    background: url('images/button-work.png') no-repeat
-                    background-size: 190px
+                text-align: center
 
-                .work:hover
-                    background: url('images/button-work-pressed.png') no-repeat
-                    background-size: contain
+                a
+                    padding: 0.25em 0
 
-                .projects
-                    padding: 30px 100px
-                    background: url('images/button-projects.png') no-repeat
-                    background-size: contain
+                    text-decoration: none
+                    letter-spacing: 0.075em
+                    color: $lavender-gray
 
-                .projects:hover
-                    background: url('images/button-projects-pressed.png') no-repeat
-                    background-size: contain
+                a:hover
+                    border-bottom: 2px solid $cool-grey
+                    color: $cool-grey
 
-                .contact
-                    padding: 30px 100px
-                    background: url('images/button-contact.png') no-repeat
-                    background-size: contain
-
-                .contact:hover
-                    background: url('images/button-contact-pressed.png') no-repeat
-                    background-size: contain
+    nav.active
+        display: block
 
 section
+    padding: 1.5em
+
+    background-color: $light-slate-gray
+
+    p
+        color: white
