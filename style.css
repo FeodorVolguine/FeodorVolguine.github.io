@@ -17,15 +17,27 @@ h1 {
 }
 
 h2 {
-  text-align: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
+  color: #9b2915ff;
 }
 
-.thin-text {
+h3 {
+  color: #1c110aff;
+}
+
+p {
+  color: grey;
+}
+
+a {
+  text-decoration: none;
+}
+
+.thin {
   font-weight: 300;
 }
 
-.bold-text {
+.bold {
   font-weight: 700;
 }
 
@@ -41,10 +53,10 @@ header .title {
 
 header .toggle-button {
   position: absolute;
+  top: 0;
+  right: 1rem;
   width: 32px;
   height: 24px;
-  top: 1rem;
-  right: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,12 +72,12 @@ header .toggle-button {
 header .toggle-button span {
   width: 100%;
   height: 3px;
-  background-color: #c1b8c8ff;
+  background-color: #e9b44cff;
   border-radius: 12px;
 }
 
 header .toggle-button:hover span {
-  background-color: #9ba0bcff;
+  background-color: #e4d6a7ff;
 }
 
 header nav {
@@ -94,14 +106,13 @@ header nav ul li {
 
 header nav ul li a {
   padding: 0.25em 0;
-  text-decoration: none;
   letter-spacing: 0.075em;
-  color: #c1b8c8ff;
+  color: #e9b44cff;
 }
 
 header nav ul li a:hover {
-  border-bottom: 2px solid #9ba0bcff;
-  color: #9ba0bcff;
+  border-bottom: 2px solid #e4d6a7ff;
+  color: #e4d6a7ff;
 }
 
 header nav.active {
@@ -110,10 +121,5 @@ header nav.active {
 
 section {
   padding: 1.5em;
-  background-color: #7a8b99ff;
-}
-
-section p {
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */

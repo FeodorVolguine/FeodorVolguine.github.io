@@ -1,12 +1,12 @@
 //Color palette
-$middle-blue-green: #a9ddd6ff
-$light-slate-gray: #7a8b99ff
 $pewter-blue: #91adc2ff
-$cool-grey: #9ba0bcff
-$lavender-gray: #c1b8c8ff
+$smoky-black: #1c110aff
+$rufous: #9b2915ff
+$maximum-yellow-red: #e9b44cff
+$dutch-white: #e4d6a7ff
 
 html
-    font-size: 100% 
+    font-size: 100%
 
 body
 
@@ -24,12 +24,22 @@ h1
     font-size: 4rem
 
 h2
-    text-align: center
-    font-size: 1.5rem
+    font-size: 1rem
 
-.thin-text
+    color: $rufous
+
+h3
+    color: $smoky-black
+
+p
+    color: grey
+
+a
+    text-decoration: none
+
+.thin
     font-weight: 300
-.bold-text
+.bold
     font-weight: 700
 
 header
@@ -43,10 +53,10 @@ header
 
     .toggle-button
         position: absolute
+        top: 0
+        right: 1rem
         width: 32px
         height: 24px
-        top: 1rem
-        right: 1rem
         
         display: flex
         flex-direction: column
@@ -56,11 +66,11 @@ header
             width: 100%
             height: 3px
 
-            background-color: $lavender-gray
+            background-color: $maximum-yellow-red
             border-radius: 12px
 
     .toggle-button:hover span
-        background-color: $cool-grey
+        background-color: $dutch-white
 
     nav
         display: none
@@ -81,21 +91,15 @@ header
                 a
                     padding: 0.25em 0
 
-                    text-decoration: none
                     letter-spacing: 0.075em
-                    color: $lavender-gray
+                    color: $maximum-yellow-red
 
                 a:hover
-                    border-bottom: 2px solid $cool-grey
-                    color: $cool-grey
+                    border-bottom: 2px solid $dutch-white
+                    color: $dutch-white
 
     nav.active
         display: block
 
 section
     padding: 1.5em
-
-    background-color: $light-slate-gray
-
-    p
-        color: white
