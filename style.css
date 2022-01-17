@@ -154,10 +154,10 @@ footer nav a .social-icon-circle {
 
 footer nav a .social-icon-circle .social-icon-mask {
   position: absolute;
-  top: 25%;
-  left: 25%;
-  width: 16px;
-  height: 16px;
+  top: 7px;
+  left: 7px;
+  width: 18px;
+  height: 18px;
 }
 
 footer nav a:hover .social-icon-circle {
