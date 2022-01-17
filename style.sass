@@ -29,18 +29,26 @@ h2
     color: $rufous
 
 h3
+    font-size: 1rem
+
     color: $smoky-black
 
 p
+    font-size: 0.9rem
+
     color: grey
 
 a
     text-decoration: none
 
+strong
+    font-weight: 700
+
 .thin
     font-weight: 300
-.bold
-    font-weight: 700
+
+.p-size-small
+    font-size: 0.8rem
 
 header
     position: relative
@@ -72,7 +80,7 @@ header
     .toggle-button:hover span
         background-color: $dutch-white
 
-    nav
+    .nav-main
         display: none
 
         ul
@@ -98,8 +106,28 @@ header
                     border-bottom: 2px solid $dutch-white
                     color: $dutch-white
 
-    nav.active
+    .nav-main.active
         display: block
 
 section
     padding: 1.5em
+
+footer
+    nav
+        display: flex
+
+        .social-icon-circle
+            position: relative
+            width: 32px
+            height: 32px
+            
+            border-radius: 50%
+            
+            background-color: $smoky-black
+
+            .social-icon-mask
+                position: absolute
+                top: 25%
+                left: 25%
+                width: 16px
+                height: 16px

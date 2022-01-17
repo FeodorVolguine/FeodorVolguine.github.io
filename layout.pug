@@ -32,12 +32,12 @@ html(lang='en')
       a(href='index.html')
         h1.title.thin Feodor Volguine
 
-      a.toggle-button#nav-toggle
+      a.toggle-button#nav-main-toggle
         span
         span
         span
 
-      nav#nav
+      nav.nav-main#nav-main
         ul
           li
             a(href='work.html') Work
@@ -47,5 +47,14 @@ html(lang='en')
             a(href='contact.html') Contact
 
     block content
+
+    footer
+      nav
+        a(href='https://www.linkedin.com/in/feodorvolguine' target='_blank' aria-label='LinkedIn')
+          .social-icon-circle
+            img.social-icon-mask(src='images/svg/linkedin-icon.svg')
+        a(href='mailto:feodorvolguine@gmail.com' target='_blank' aria-label='Email')
+          .social-icon-circle
+            img.social-icon-mask(src='images/svg/email-icon.svg')
 
     script(src='client.js')

@@ -22,10 +22,12 @@ h2 {
 }
 
 h3 {
+  font-size: 1rem;
   color: #1c110aff;
 }
 
 p {
+  font-size: 0.9rem;
   color: grey;
 }
 
@@ -33,12 +35,16 @@ a {
   text-decoration: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .thin {
   font-weight: 300;
 }
 
-.bold {
-  font-weight: 700;
+.p-size-small {
+  font-size: 0.8rem;
 }
 
 header {
@@ -80,11 +86,11 @@ header .toggle-button:hover span {
   background-color: #e4d6a7ff;
 }
 
-header nav {
+header .nav-main {
   display: none;
 }
 
-header nav ul {
+header .nav-main ul {
   padding: 0.25em 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,27 +105,49 @@ header nav ul {
   list-style: none;
 }
 
-header nav ul li {
+header .nav-main ul li {
   margin: 0.5em 1em;
   text-align: center;
 }
 
-header nav ul li a {
+header .nav-main ul li a {
   padding: 0.25em 0;
   letter-spacing: 0.075em;
   color: #e9b44cff;
 }
 
-header nav ul li a:hover {
+header .nav-main ul li a:hover {
   border-bottom: 2px solid #e4d6a7ff;
   color: #e4d6a7ff;
 }
 
-header nav.active {
+header .nav-main.active {
   display: block;
 }
 
 section {
   padding: 1.5em;
+}
+
+footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer nav .social-icon-circle {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1c110aff;
+}
+
+footer nav .social-icon-circle .social-icon-mask {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 16px;
+  height: 16px;
 }
 /*# sourceMappingURL=style.css.map */
