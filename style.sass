@@ -10,8 +10,9 @@ html
 
 body
 
-    height: 100vh
     margin: 0
+    height: 100vh
+    
     padding: 0
 
     font-size: 1rem
@@ -49,6 +50,10 @@ strong
 
 .p-size-small
     font-size: 0.8rem
+
+.base-container
+    margin: auto
+    width: 90%
 
 header
     position: relative
@@ -109,25 +114,30 @@ header
     .nav-main.active
         display: block
 
-section
-    padding: 1.5em
-
 footer
+    padding: 1rem 0
+
     nav
         display: flex
 
-        .social-icon-circle
-            position: relative
-            width: 32px
-            height: 32px
-            
-            border-radius: 50%
-            
-            background-color: $smoky-black
+        a
+            margin-right: 8px
 
-            .social-icon-mask
-                position: absolute
-                top: 25%
-                left: 25%
-                width: 16px
-                height: 16px
+            .social-icon-circle
+                position: relative
+                width: 32px
+                height: 32px
+                
+                border-radius: 50%
+                
+                background-color: $smoky-black
+
+                .social-icon-mask
+                    position: absolute
+                    top: 25%
+                    left: 25%
+                    width: 16px
+                    height: 16px
+
+        a:hover .social-icon-circle
+            background-color: $rufous

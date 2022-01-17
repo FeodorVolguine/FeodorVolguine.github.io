@@ -3,8 +3,8 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: 0;
+  height: 100vh;
   padding: 0;
   font-size: 1rem;
   font-family: Lato, sans-serif;
@@ -45,6 +45,11 @@ strong {
 
 .p-size-small {
   font-size: 0.8rem;
+}
+
+.base-container {
+  margin: auto;
+  width: 90%;
 }
 
 header {
@@ -125,8 +130,8 @@ header .nav-main.active {
   display: block;
 }
 
-section {
-  padding: 1.5em;
+footer {
+  padding: 1rem 0;
 }
 
 footer nav {
@@ -135,7 +140,11 @@ footer nav {
   display: flex;
 }
 
-footer nav .social-icon-circle {
+footer nav a {
+  margin-right: 8px;
+}
+
+footer nav a .social-icon-circle {
   position: relative;
   width: 32px;
   height: 32px;
@@ -143,11 +152,15 @@ footer nav .social-icon-circle {
   background-color: #1c110aff;
 }
 
-footer nav .social-icon-circle .social-icon-mask {
+footer nav a .social-icon-circle .social-icon-mask {
   position: absolute;
   top: 25%;
   left: 25%;
   width: 16px;
   height: 16px;
+}
+
+footer nav a:hover .social-icon-circle {
+  background-color: #9b2915ff;
 }
 /*# sourceMappingURL=style.css.map */
