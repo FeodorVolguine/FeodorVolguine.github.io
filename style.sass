@@ -1,9 +1,10 @@
 //Color palette
-$pewter-blue: #91adc2ff
-$smoky-black: #1c110aff
-$rufous: #9b2915ff
-$maximum-yellow-red: #e9b44cff
-$dutch-white: #e4d6a7ff
+$yellow-green: #98ce00ff
+$turquoise: #16e0bdff
+$maya-blue: #78c3fbff
+$cornflower-blue: #89a6fbff
+$mountbatten-pink: #98838fff
+$eerie-black: #262626ff
 
 html
     font-size: 100%
@@ -15,32 +16,34 @@ body
     
     padding: 0
 
-    font-size: 1rem
-    font-family: Lato, sans-serif
+    font-size: 1.25rem
+    font-family: Alaska, sans-serif
+    letter-spacing: -0.5px
+    line-height: 1.5
 
+    color: $eerie-black
     background-color: white
+
+a
+    text-decoration: none
+
+li
+    margin: 0.25em
 
 h1
     text-align: center
     font-size: 4rem
 
 h2
-    font-size: 1rem
-
-    color: $rufous
+    margin: 0
+    font-size: 3.5rem
 
 h3
     font-size: 1rem
 
-    color: $smoky-black
-
 p
+    margin: 0
     font-size: 0.9rem
-
-    color: grey
-
-a
-    text-decoration: none
 
 strong
     font-weight: 700
@@ -51,10 +54,6 @@ strong
 .p-size-small
     font-size: 0.8rem
 
-.base-container
-    margin: auto
-    width: 90%
-
 header
     position: relative
 
@@ -62,7 +61,7 @@ header
         padding: 0 1em
 
         font-family: Garamond, serif
-        color: $pewter-blue
+        color: $mountbatten-pink
 
     .toggle-button
         position: absolute
@@ -79,11 +78,11 @@ header
             width: 100%
             height: 3px
 
-            background-color: $maximum-yellow-red
+            background-color: $mountbatten-pink
             border-radius: 12px
 
     .toggle-button:hover span
-        background-color: $dutch-white
+        background-color: $mountbatten-pink
 
     .nav-main
         display: none
@@ -105,11 +104,11 @@ header
                     padding: 0.25em 0
 
                     letter-spacing: 0.075em
-                    color: $maximum-yellow-red
+                    color: $mountbatten-pink
 
                 a:hover
-                    border-bottom: 2px solid $dutch-white
-                    color: $dutch-white
+                    border-bottom: 2px solid $mountbatten-pink
+                    color: $mountbatten-pink
 
     .nav-main.active
         display: block
@@ -130,7 +129,7 @@ footer
                 
                 border-radius: 50%
                 
-                background-color: $smoky-black
+                background-color: black
 
                 .social-icon-mask
                     position: absolute
@@ -140,4 +139,26 @@ footer
                     height: 18px
 
         a:hover .social-icon-circle
-            background-color: $rufous
+            background-color: $mountbatten-pink
+
+//Content
+
+.work-content
+    padding: 3em 1em 3em 1em
+
+@media (min-width: 1000px)
+    .work-content
+        margin: auto
+        width: 65%
+
+.section-one
+    h2
+        color: $turquoise
+
+.section-two
+    color: white
+    background-image: linear-gradient(90deg, #7188ce, #64a1cf)
+
+.section-three
+    h2
+        color: $yellow-green

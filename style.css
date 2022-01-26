@@ -6,9 +6,20 @@ body {
   margin: 0;
   height: 100vh;
   padding: 0;
-  font-size: 1rem;
-  font-family: Lato, sans-serif;
+  font-size: 1.25rem;
+  font-family: Alaska, sans-serif;
+  letter-spacing: -0.5px;
+  line-height: 1.5;
+  color: #262626ff;
   background-color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin: 0.25em;
 }
 
 h1 {
@@ -17,22 +28,17 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
-  color: #9b2915ff;
+  margin: 0;
+  font-size: 3.5rem;
 }
 
 h3 {
   font-size: 1rem;
-  color: #1c110aff;
 }
 
 p {
+  margin: 0;
   font-size: 0.9rem;
-  color: grey;
-}
-
-a {
-  text-decoration: none;
 }
 
 strong {
@@ -47,11 +53,6 @@ strong {
   font-size: 0.8rem;
 }
 
-.base-container {
-  margin: auto;
-  width: 90%;
-}
-
 header {
   position: relative;
 }
@@ -59,7 +60,7 @@ header {
 header .title {
   padding: 0 1em;
   font-family: Garamond, serif;
-  color: #91adc2ff;
+  color: #98838fff;
 }
 
 header .toggle-button {
@@ -83,12 +84,12 @@ header .toggle-button {
 header .toggle-button span {
   width: 100%;
   height: 3px;
-  background-color: #e9b44cff;
+  background-color: #98838fff;
   border-radius: 12px;
 }
 
 header .toggle-button:hover span {
-  background-color: #e4d6a7ff;
+  background-color: #98838fff;
 }
 
 header .nav-main {
@@ -118,12 +119,12 @@ header .nav-main ul li {
 header .nav-main ul li a {
   padding: 0.25em 0;
   letter-spacing: 0.075em;
-  color: #e9b44cff;
+  color: #98838fff;
 }
 
 header .nav-main ul li a:hover {
-  border-bottom: 2px solid #e4d6a7ff;
-  color: #e4d6a7ff;
+  border-bottom: 2px solid #98838fff;
+  color: #98838fff;
 }
 
 header .nav-main.active {
@@ -149,7 +150,7 @@ footer nav a .social-icon-circle {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #1c110aff;
+  background-color: black;
 }
 
 footer nav a .social-icon-circle .social-icon-mask {
@@ -161,6 +162,31 @@ footer nav a .social-icon-circle .social-icon-mask {
 }
 
 footer nav a:hover .social-icon-circle {
-  background-color: #9b2915ff;
+  background-color: #98838fff;
+}
+
+.work-content {
+  padding: 3em 1em 3em 1em;
+}
+
+@media (min-width: 1000px) {
+  .work-content {
+    margin: auto;
+    width: 65%;
+  }
+}
+
+.section-one h2 {
+  color: #16e0bdff;
+}
+
+.section-two {
+  color: white;
+  background-image: -webkit-gradient(linear, left top, right top, from(#7188ce), to(#64a1cf));
+  background-image: linear-gradient(90deg, #7188ce, #64a1cf);
+}
+
+.section-three h2 {
+  color: #98ce00ff;
 }
 /*# sourceMappingURL=style.css.map */
