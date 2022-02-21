@@ -10,7 +10,6 @@ html
     font-size: 100%
 
 body
-
     margin: 0
     height: 100vh
     
@@ -154,6 +153,35 @@ footer
 .section-one
     h2
         color: $turquoise
+
+    .cards
+        padding: 1em
+        display: flex
+        flex-wrap: nowrap
+        overflow-x: auto
+
+        cursor: grab
+        -webkit-overflow-scrolling: touch
+
+        .card
+            margin: 1em
+
+            flex: none
+            width: 250px
+
+            padding: 1em
+
+            border-radius: 10px
+            box-shadow: 0 4px 10px #00000034
+
+            transition: all 300ms ease
+
+        .card:hover
+            transform: scale(1.06)
+            box-shadow: 0 10px 10px #00000034
+    
+    .cards::-webkit-scrollbar
+        display: none
 
 .section-two
     color: white

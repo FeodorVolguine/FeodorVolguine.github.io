@@ -180,6 +180,44 @@ footer nav a:hover .social-icon-circle {
   color: #16e0bdff;
 }
 
+.section-one .cards {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow-x: auto;
+  cursor: -webkit-grab;
+  cursor: grab;
+  -webkit-overflow-scrolling: touch;
+}
+
+.section-one .cards .card {
+  margin: 1em;
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 250px;
+  padding: 1em;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 10px #00000034;
+          box-shadow: 0 4px 10px #00000034;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.section-one .cards .card:hover {
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+  -webkit-box-shadow: 0 10px 10px #00000034;
+          box-shadow: 0 10px 10px #00000034;
+}
+
+.section-one .cards::-webkit-scrollbar {
+  display: none;
+}
+
 .section-two {
   color: white;
   background-image: -webkit-gradient(linear, left top, right top, from(#7188ce), to(#64a1cf));
