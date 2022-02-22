@@ -79,6 +79,10 @@ header .toggle-button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: -webkit-transform 400ms ease-in-out;
+  transition: -webkit-transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out;
+  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
 
 header .toggle-button span {
@@ -88,12 +92,20 @@ header .toggle-button span {
   border-radius: 12px;
 }
 
-header .toggle-button:hover span {
-  background-color: #98838fff;
+header .toggle-button:hover {
+  cursor: pointer;
+}
+
+header .toggle-button.active {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 header .nav-main {
-  display: none;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 400ms ease;
+  transition: height 400ms ease;
 }
 
 header .nav-main ul {
@@ -128,7 +140,7 @@ header .nav-main ul li a:hover {
 }
 
 header .nav-main.active {
-  display: block;
+  height: 200px;
 }
 
 footer {
@@ -180,7 +192,7 @@ footer nav a:hover .social-icon-circle {
   color: #16e0bdff;
 }
 
-.section-one .cards {
+.cards {
   padding: 1em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -193,28 +205,28 @@ footer nav a:hover .social-icon-circle {
   -webkit-overflow-scrolling: touch;
 }
 
-.section-one .cards .card {
+.cards .card {
   margin: 1em;
   -webkit-box-flex: 0;
       -ms-flex: none;
           flex: none;
   width: 250px;
-  padding: 1em;
+  padding: 0.75em;
   border-radius: 10px;
-  -webkit-box-shadow: 0 4px 10px #00000034;
-          box-shadow: 0 4px 10px #00000034;
+  -webkit-box-shadow: 0 4px 14px #00000036;
+          box-shadow: 0 4px 14px #00000036;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
 
-.section-one .cards .card:hover {
+.cards .card:hover {
   -webkit-transform: scale(1.06);
           transform: scale(1.06);
-  -webkit-box-shadow: 0 10px 10px #00000034;
-          box-shadow: 0 10px 10px #00000034;
+  -webkit-box-shadow: 0 10px 14px #00000024;
+          box-shadow: 0 10px 14px #00000024;
 }
 
-.section-one .cards::-webkit-scrollbar {
+.cards::-webkit-scrollbar {
   display: none;
 }
 
