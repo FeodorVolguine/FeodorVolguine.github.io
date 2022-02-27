@@ -1,11 +1,11 @@
 extends layout.pug
 
 block content
-  section.section-one.work-content
+  section.section-one.base-container
     h2 EXPERIENCE
 
-  .cards#workExperienceCards
-      .card
+  .cards
+      div
         h3
           strong Secure City Solutions
         h3.thin 135 Michael Cowpland Dr, Ottawa, ON — Software Testing Engineer
@@ -19,7 +19,7 @@ block content
             p Installed software, hardware, and configured operating system software in preparation for testing
           li
             p Executed, analyzed, and documented results of software application tests
-      .card
+      div
         h3
           strong Nokia
         h3.thin 600 March Rd, Ottawa, ON — Cooperative Education Student
@@ -35,14 +35,9 @@ block content
             p Updated critical software programs on laboratory computers
           li
             p Assisted network and mechanical engineers in diverse tasks
-      .card
-      .card
-      .card
-      .card
-      .card
 
   section.section-two
-    .work-content
+    .base-container
       h2 SKILLS
       br
       strong Computer graphics
@@ -54,7 +49,7 @@ block content
       strong Software
       p Microsoft Visual Studio, Git, Blender, Adobe Photoshop, World Machine, Terragen, ZBrush
 
-  section.section-three.work-content
+  section.section-three.base-container
     h2 EDUCATION
 
     h3

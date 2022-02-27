@@ -29,8 +29,8 @@ html(lang='en')
 
   body
     header
-      a(href='index.html')
-        h1.title.thin Feodor Volguine
+      a.title(href='index.html')
+        h1.thin Feodor Volguine
 
       a.toggle-button#nav-main-toggle
         span
@@ -51,13 +51,10 @@ html(lang='en')
     footer.base-container
       nav
         a(href='https://www.linkedin.com/in/feodorvolguine' target='_blank' aria-label='LinkedIn')
-          .social-icon-circle
-            img.social-icon-mask(src='images/svg/linkedin-icon.svg')
+          strong.linkedIn-link LinkedIn
         a(href='mailto:feodorvolguine@gmail.com' target='_blank' aria-label='Email')
-          .social-icon-circle
-            img.social-icon-mask(src='images/svg/email-icon.svg')
+          strong.email-link Email
         a(href='https://www.github.com/feodorvolguine' target='_blank' aria-label='Github')
-          .social-icon-circle
-            img.social-icon-mask(src='images/svg/github-icon.svg')
+          strong.github-link Github
 
     script(src='client.js')

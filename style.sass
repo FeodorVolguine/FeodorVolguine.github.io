@@ -53,19 +53,30 @@ strong
 .p-size-small
     font-size: 0.8rem
 
+.base-container
+    padding: 3em 1em 3em 1em
+
+@media (min-width: 1000px)
+    .base-container
+        margin: auto
+        width: 65%
+
 header
     position: relative
 
     .title
-        padding: 0 1em
+        position: relative
+        left: 50%
+        transform: translateX(-50%)
+        display: inline-block
 
         font-family: Garamond, serif
         color: $mountbatten-pink
 
     .toggle-button
         position: absolute
-        top: 0
-        right: 1rem
+        top: 2rem
+        right: 2rem
         width: 32px
         height: 24px
         
@@ -130,34 +141,24 @@ footer
         a
             margin-right: 8px
 
-            .social-icon-circle
-                position: relative
-                width: 32px
-                height: 32px
+            strong
+                font-size: 0.85em
                 
-                border-radius: 50%
-                
-                background-color: black
+                color: $eerie-black
+            
+            .linkedIn-link:hover
+                color: blue
 
-                .social-icon-mask
-                    position: absolute
-                    top: 7px
-                    left: 7px
-                    width: 18px
-                    height: 18px
+            .email-link:hover
+                color: purple
+
+            .github-link:hover
+                color: grey
 
         a:hover .social-icon-circle
             background-color: $mountbatten-pink
 
 //Content
-
-.work-content
-    padding: 3em 1em 3em 1em
-
-@media (min-width: 1000px)
-    .work-content
-        margin: auto
-        width: 65%
 
 .section-one
     h2
@@ -166,28 +167,24 @@ footer
 .cards
     padding: 1em
     display: flex
-    flex-wrap: nowrap
-    overflow-x: auto
 
-    cursor: grab
-    -webkit-overflow-scrolling: touch
-
-    .card
+    div
         margin: 1em
 
-        flex: none
         width: 250px
+        height: 10ch
+        overflow: hidden
 
         padding: 0.75em
 
-        border-radius: 10px
-        box-shadow: 0 4px 14px #00000036
+        border-radius: 3px
+        border: 2px solid #0000002d
 
-        transition: all 300ms ease
+        transition: all 500ms ease
 
-    .card:hover
-        transform: scale(1.06)
-        box-shadow: 0 10px 14px #00000024
+    div:hover
+        height: 50ch
+        border: 2px solid $turquoise
     
 .cards::-webkit-scrollbar
     display: none

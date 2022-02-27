@@ -53,20 +53,35 @@ strong {
   font-size: 0.8rem;
 }
 
+.base-container {
+  padding: 3em 1em 3em 1em;
+}
+
+@media (min-width: 1000px) {
+  .base-container {
+    margin: auto;
+    width: 65%;
+  }
+}
+
 header {
   position: relative;
 }
 
 header .title {
-  padding: 0 1em;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-block;
   font-family: Garamond, serif;
   color: #98838fff;
 }
 
 header .toggle-button {
   position: absolute;
-  top: 0;
-  right: 1rem;
+  top: 2rem;
+  right: 2rem;
   width: 32px;
   height: 24px;
   display: -webkit-box;
@@ -157,35 +172,25 @@ footer nav a {
   margin-right: 8px;
 }
 
-footer nav a .social-icon-circle {
-  position: relative;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: black;
+footer nav a strong {
+  font-size: 0.85em;
+  color: #262626ff;
 }
 
-footer nav a .social-icon-circle .social-icon-mask {
-  position: absolute;
-  top: 7px;
-  left: 7px;
-  width: 18px;
-  height: 18px;
+footer nav a .linkedIn-link:hover {
+  color: blue;
+}
+
+footer nav a .email-link:hover {
+  color: purple;
+}
+
+footer nav a .github-link:hover {
+  color: grey;
 }
 
 footer nav a:hover .social-icon-circle {
   background-color: #98838fff;
-}
-
-.work-content {
-  padding: 3em 1em 3em 1em;
-}
-
-@media (min-width: 1000px) {
-  .work-content {
-    margin: auto;
-    width: 65%;
-  }
 }
 
 .section-one h2 {
@@ -197,33 +202,23 @@ footer nav a:hover .social-icon-circle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  overflow-x: auto;
-  cursor: -webkit-grab;
-  cursor: grab;
-  -webkit-overflow-scrolling: touch;
 }
 
-.cards .card {
+.cards div {
   margin: 1em;
-  -webkit-box-flex: 0;
-      -ms-flex: none;
-          flex: none;
   width: 250px;
+  height: 10ch;
+  overflow: hidden;
   padding: 0.75em;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 4px 14px #00000036;
-          box-shadow: 0 4px 14px #00000036;
-  -webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  border-radius: 3px;
+  border: 2px solid #0000002d;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
 }
 
-.cards .card:hover {
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
-  -webkit-box-shadow: 0 10px 14px #00000024;
-          box-shadow: 0 10px 14px #00000024;
+.cards div:hover {
+  height: 50ch;
+  border: 2px solid #16e0bdff;
 }
 
 .cards::-webkit-scrollbar {
