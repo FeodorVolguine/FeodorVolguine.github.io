@@ -6,6 +6,11 @@ $cornflower-blue: #89a6fbff
 $mountbatten-pink: #98838fff
 $eerie-black: #262626ff
 
+//Social media
+$linkedin: #0a66c2ff
+$email: #ea4335ff
+$github: #333333ff
+
 html
     font-size: 100%
 
@@ -133,30 +138,26 @@ header
         height: 200px
 
 footer
-    padding: 1rem 0
-
     nav
         display: flex
+        justify-content: center
 
         a
-            margin-right: 8px
+            margin: 0 0.75em
 
             strong
                 font-size: 0.85em
                 
-                color: $eerie-black
+                color: grey
             
             .linkedIn-link:hover
-                color: blue
+                color: $linkedin
 
             .email-link:hover
-                color: purple
+                color: $email
 
             .github-link:hover
-                color: grey
-
-        a:hover .social-icon-circle
-            background-color: $mountbatten-pink
+                color: $github
 
 //Content
 
@@ -165,29 +166,16 @@ footer
         color: $turquoise
 
 .cards
-    padding: 1em
     display: flex
 
     div
-        margin: 1em
+        margin-right: 1em
 
         width: 250px
-        height: 10ch
-        overflow: hidden
 
         padding: 0.75em
 
-        border-radius: 3px
-        border: 2px solid #0000002d
-
-        transition: all 500ms ease
-
-    div:hover
-        height: 50ch
-        border: 2px solid $turquoise
-    
-.cards::-webkit-scrollbar
-    display: none
+        border-right: 1px solid $eerie-black
 
 .section-two
     color: white
