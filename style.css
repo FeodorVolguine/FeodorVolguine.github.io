@@ -10,7 +10,7 @@ body {
   font-family: Alaska, sans-serif;
   letter-spacing: -0.5px;
   line-height: 1.5;
-  color: #262626ff;
+  color: #1d1d1f;
   background-color: white;
 }
 
@@ -189,29 +189,52 @@ footer nav a .github-link:hover {
 }
 
 .section-one h2 {
-  color: #16e0bdff;
+  color: #1d1d1f;
 }
 
-.cards {
+.section-one .cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.cards div {
+.section-one .cards div {
   margin-right: 1em;
   width: 250px;
   padding: 0.75em;
-  border-right: 1px solid #262626ff;
+  background-color: #fbfbfd;
+}
+
+.section-one .cards div p {
+  color: #6e6e73;
+}
+
+.section-one .cards div li {
+  color: #6e6e73;
 }
 
 .section-two {
-  color: white;
-  background-image: -webkit-gradient(linear, left top, right top, from(#7188ce), to(#64a1cf));
-  background-image: linear-gradient(90deg, #7188ce, #64a1cf);
+  color: #e7e7e8;
+  background-color: #424245;
 }
 
 .section-three h2 {
-  color: #98ce00ff;
+  color: #1d1d1f;
+}
+
+.section-three div {
+  margin-bottom: 1em;
+  padding: 0.75em;
+  background-color: #fbfbfd;
+}
+
+.section-three div p {
+  color: #6e6e73;
+}
+
+.broken div {
+  padding: 0.75em;
+  color: #6e6e73;
+  border: 2px solid #6e6e73;
 }
 /*# sourceMappingURL=style.css.map */

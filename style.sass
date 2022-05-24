@@ -1,12 +1,15 @@
 //Color palette
-$yellow-green: #98ce00ff
-$turquoise: #16e0bdff
-$maya-blue: #78c3fbff
-$cornflower-blue: #89a6fbff
 $mountbatten-pink: #98838fff
-$eerie-black: #262626ff
+$whisper: #fbfbfd
 
-//Social media
+//Semantic colors
+$background-light: white
+$background-neutral: #424245
+$text-light: #e7e7e8
+$text-neutral: #6e6e73
+$text-dark: #1d1d1f
+
+//Social media colors
 $linkedin: #0a66c2ff
 $email: #ea4335ff
 $github: #333333ff
@@ -25,8 +28,8 @@ body
     letter-spacing: -0.5px
     line-height: 1.5
 
-    color: $eerie-black
-    background-color: white
+    color: $text-dark
+    background-color: $background-light
 
 a
     text-decoration: none
@@ -161,26 +164,45 @@ footer
 
 //Content
 
+//Work
 .section-one
     h2
-        color: $turquoise
+        color: $text-dark
 
-.cards
-    display: flex
+    .cards
+        display: flex
 
-    div
-        margin-right: 1em
+        div
+            margin-right: 1em
+            width: 250px
+            padding: 0.75em
 
-        width: 250px
+            background-color: $whisper
 
-        padding: 0.75em
+            p
+                color: $text-neutral
 
-        border-right: 1px solid $eerie-black
+            li
+                color: $text-neutral
 
 .section-two
-    color: white
-    background-image: linear-gradient(90deg, #7188ce, #64a1cf)
+    color: $text-light
+    background-color: $background-neutral
 
 .section-three
     h2
-        color: $yellow-green
+        color: $text-dark
+
+    div
+        margin-bottom: 1em
+        padding: 0.75em
+
+        background-color: $whisper
+        p
+            color: $text-neutral
+
+.broken
+    div
+        padding: 0.75em
+        color: $text-neutral
+        border: 2px solid $text-neutral
