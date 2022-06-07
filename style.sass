@@ -164,17 +164,18 @@ footer
 
 //Content
 
-//Work
+//Career
 .section-one
     h2
         color: $text-dark
 
     .cards
         display: flex
+        flex-direction: column
 
         div
-            margin-right: 1em
-            width: 250px
+            margin-bottom: 1em
+            width: auto
             padding: 0.75em
 
             background-color: $whisper
@@ -184,6 +185,14 @@ footer
 
             li
                 color: $text-neutral
+
+@media (min-width: 750px)
+    .cards
+        flex-direction: row !important
+
+        div
+            margin-right: 1em
+            width: 250px !important
 
 .section-two
     color: $text-light
@@ -201,8 +210,9 @@ footer
         p
             color: $text-neutral
 
+//Projects
+
+
 .broken
-    div
-        padding: 0.75em
-        color: $text-neutral
-        border: 2px solid $text-neutral
+    padding: 0.75em
+    color: $text-neutral

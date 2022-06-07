@@ -196,11 +196,15 @@ footer nav a .github-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .section-one .cards div {
-  margin-right: 1em;
-  width: 250px;
+  margin-bottom: 1em;
+  width: auto;
   padding: 0.75em;
   background-color: #fbfbfd;
 }
@@ -211,6 +215,19 @@ footer nav a .github-link:hover {
 
 .section-one .cards div li {
   color: #6e6e73;
+}
+
+@media (min-width: 750px) {
+  .cards {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .cards div {
+    margin-right: 1em;
+    width: 250px !important;
+  }
 }
 
 .section-two {
@@ -232,9 +249,8 @@ footer nav a .github-link:hover {
   color: #6e6e73;
 }
 
-.broken div {
+.broken {
   padding: 0.75em;
   color: #6e6e73;
-  border: 2px solid #6e6e73;
 }
 /*# sourceMappingURL=style.css.map */
