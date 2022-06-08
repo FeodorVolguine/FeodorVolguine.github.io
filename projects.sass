@@ -1,6 +1,31 @@
 @use 'colors'
 @use 'base'
 
-.broken
-    padding: 0.75em
+.bubble
+    margin-bottom: 5em !important
+
+    display: flex
+    flex-direction: column
+
+    overflow: hidden
+    
     color: colors.$text-neutral
+    border-radius: 25px
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 24px 48px 0px
+
+    div
+        padding: 1.5em
+
+        p
+            font-size: 1.1em
+
+    img
+        width: 100%
+        object-fit: cover
+
+@media (min-width: 1000px)
+    .bubble
+        flex-direction: row
+
+        img
+            width: 50%

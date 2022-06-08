@@ -1,4 +1,19 @@
 extends layout.pug
 
 block content
-  section.base-container
+  section.section-one2.base-container
+    .bubble
+      div
+        h2 Real-time global illumination
+        br
+        p Light bouncing is simulated using a voxel cone traced global illumination algorithm.
+
+      img(src='images/global-illumination.png')
+
+    .bubble
+      img(src='images/reflections-2.png')
+      
+      div
+        h2 Off-screen reflections
+        br
+        p Voxel cone traced global illumination also enables reflections that are not possible with common tricks such as screen-space reflections.
