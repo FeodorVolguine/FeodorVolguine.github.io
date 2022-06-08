@@ -1,0 +1,47 @@
+@use 'colors'
+@use 'base'
+
+.section-one
+    h2
+        color: colors.$text-dark
+
+    .cards
+        display: flex
+        flex-direction: column
+
+        div
+            margin-bottom: 1em
+            width: auto
+            padding: 0.75em
+
+            background-color: colors.$whisper
+
+            p
+                color: colors.$text-neutral
+
+            li
+                color: colors.$text-neutral
+
+@media (min-width: 750px)
+    .cards
+        flex-direction: row !important
+
+        div
+            margin-right: 1em
+            width: 250px !important
+
+.section-two
+    color: colors.$text-light
+    background-color: colors.$background-neutral
+
+.section-three
+    h2
+        color: colors.$text-dark
+
+    div
+        margin-bottom: 1em
+        padding: 0.75em
+
+        background-color: colors.$whisper
+        p
+            color: colors.$text-neutral

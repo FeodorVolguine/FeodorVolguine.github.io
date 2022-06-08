@@ -63,127 +63,86 @@ strong {
     width: 65%;
   }
 }
-
 header {
   position: relative;
 }
-
 header .title {
   position: relative;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   display: inline-block;
   font-family: Garamond, serif;
   color: #98838fff;
 }
-
 header .toggle-button {
   position: absolute;
   top: 2rem;
   right: 2rem;
   width: 32px;
   height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-transition: -webkit-transform 400ms ease-in-out;
-  transition: -webkit-transform 400ms ease-in-out;
+  flex-direction: column;
+  justify-content: space-between;
   transition: transform 400ms ease-in-out;
-  transition: transform 400ms ease-in-out, -webkit-transform 400ms ease-in-out;
 }
-
 header .toggle-button span {
   width: 100%;
   height: 3px;
   background-color: #98838fff;
   border-radius: 12px;
 }
-
 header .toggle-button:hover {
   cursor: pointer;
 }
-
 header .toggle-button.active {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
 }
-
 header .nav-main {
   height: 0;
   overflow: hidden;
-  -webkit-transition: height 400ms ease;
   transition: height 400ms ease;
 }
-
 header .nav-main ul {
   padding: 0.25em 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   list-style: none;
 }
-
 header .nav-main ul li {
   margin: 0.5em 1em;
   text-align: center;
 }
-
 header .nav-main ul li a {
   padding: 0.25em 0;
   letter-spacing: 0.075em;
   color: #98838fff;
 }
-
 header .nav-main ul li a:hover {
   border-bottom: 2px solid #98838fff;
   color: #98838fff;
 }
-
 header .nav-main.active {
   height: 200px;
 }
 
 footer nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 footer nav a {
   margin: 0 0.75em;
 }
-
 footer nav a strong {
   font-size: 0.85em;
   color: grey;
 }
-
 footer nav a .linkedIn-link:hover {
   color: #0a66c2ff;
 }
-
 footer nav a .email-link:hover {
   color: #ea4335ff;
 }
-
 footer nav a .github-link:hover {
   color: #333333ff;
 }
@@ -191,45 +150,32 @@ footer nav a .github-link:hover {
 .section-one h2 {
   color: #1d1d1f;
 }
-
 .section-one .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .section-one .cards div {
   margin-bottom: 1em;
   width: auto;
   padding: 0.75em;
   background-color: #fbfbfd;
 }
-
 .section-one .cards div p {
   color: #6e6e73;
 }
-
 .section-one .cards div li {
   color: #6e6e73;
 }
 
 @media (min-width: 750px) {
   .cards {
-    -webkit-box-orient: horizontal !important;
-    -webkit-box-direction: normal !important;
-        -ms-flex-direction: row !important;
-            flex-direction: row !important;
+    flex-direction: row !important;
   }
   .cards div {
     margin-right: 1em;
     width: 250px !important;
   }
 }
-
 .section-two {
   color: #e7e7e8;
   background-color: #424245;
@@ -238,19 +184,12 @@ footer nav a .github-link:hover {
 .section-three h2 {
   color: #1d1d1f;
 }
-
 .section-three div {
   margin-bottom: 1em;
   padding: 0.75em;
   background-color: #fbfbfd;
 }
-
 .section-three div p {
   color: #6e6e73;
 }
-
-.broken {
-  padding: 0.75em;
-  color: #6e6e73;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=career.css.map */
