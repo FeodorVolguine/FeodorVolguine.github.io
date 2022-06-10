@@ -2,11 +2,17 @@ extends layout.pug
 
 block content
   section.section-one2.base-container
+    .nav-secondary
+      ul
+        li
+          a(href='projects-gogaman.html') Gogaman
+        li
+          a(href='projects-workoutwatcher.html') Workout Watcher
     .bubble
       div
         h2 Real-time global illumination
         br
-        p Light bouncing is simulated using a voxel cone traced global illumination algorithm.
+        p Light bouncing is simulated using a voxel cone tracing algorithm. No baking - fully dynamic light sources and geometry.
 
       img(src='images/global-illumination.png')
 
