@@ -1,25 +1,43 @@
 extends layout.pug
 
 block content
-  section.section-one2.base-container
+  section.section-one2
     .nav-secondary
       ul
         li
           a(href='projects-gogaman.html') Gogaman
         li
           a(href='projects-workoutwatcher.html') Workout Watcher
-    .bubble
-      div
-        h2 Real-time global illumination
-        br
-        p Light bouncing is simulated using a voxel cone tracing algorithm. No baking - fully dynamic light sources and geometry.
+    .content-container-unit
+      .content-unit.global-illumination
+        div
+          h3 Real-time global illumination
+          p Light bouncing is simulated using a voxel cone tracing algorithm. This solution to GI requires no baking - light sources and geometry are fully dynamic.
+          br
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+        
+        img(src='images/global-illumination.png')
 
-      img(src='images/global-illumination.png')
+      .content-unit.reflection
+        div
+          h3 Reflections
+          p Cone tracing through the voxel structure enables reflections of out-of-view objects, but at a fraction of the cost of raytracing triangle geometry.
+          br
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+        
+        img(src='images/reflections-1.png')
 
-    .bubble
-      img(src='images/reflections-2.png')
-      
-      div
-        h2 Off-screen reflections
-        br
-        p Voxel cone traced global illumination also enables reflections that are not possible with common tricks such as screen-space reflections.
+      .content-unit.emissive-geometry
+        div
+          h3 Emissive geometry
+          p
+          br
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+        
+        img(src='images/emissive-on.png')
+
+      .content-unit.tools
+        div
+          h3 Tools
+        
+        //img(src='images/emissive-on.png')

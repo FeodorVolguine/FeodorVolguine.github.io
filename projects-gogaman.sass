@@ -11,31 +11,52 @@
         a
             color: colors.$text-dark
 
-.bubble
-    margin-bottom: 5em !important
+.content-container-unit
+    //margin: 50px
+    display: grid
+    gap: 50px
+
+.content-unit
+    position: relative
+    width: 100%
+    height: 700px
 
     display: flex
     flex-direction: column
-
-    overflow: hidden
     
-    color: colors.$text-neutral
-    border-radius: 25px
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 24px 48px 0px
+    background-color: colors.$whisper
+    color: colors.$text-dark
 
     div
+        z-index: 1
+
         padding: 1.5em
+
+        h3
+            font-size: 1.5em
 
         p
             font-size: 1.1em
 
     img
+        position: absolute
+        bottom: 0
         width: 100%
+
         object-fit: cover
 
 @media (min-width: 1000px)
-    .bubble
-        flex-direction: row
+    .content-container-unit
+        margin: 50px
+        grid-template-columns: repeat(2, 1fr)
 
-        img
-            width: 50%
+.global-illumination
+    background-color: #fffbe8
+
+.reflection
+    background-color: black
+    color: white
+
+.emissive-geometry
+    background-color: #ff5f5f
+    color: white
