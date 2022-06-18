@@ -10,7 +10,7 @@ block content
           a(href='projects-workoutwatcher.html') Workout Watcher
     .content-container-unit
       .content-unit.global-illumination
-        div
+        .unit-text
           h3 Real-time global illumination
           p Light bouncing is simulated using a voxel cone tracing algorithm. This solution to GI requires no baking - light sources and geometry are fully dynamic.
           br
@@ -19,7 +19,7 @@ block content
         img(src='images/global-illumination.png')
 
       .content-unit.reflection
-        div
+        .unit-text
           h3 Reflections
           p Cone tracing through the voxel structure enables reflections of out-of-view objects, but at a fraction of the cost of raytracing triangle geometry.
           br
@@ -28,16 +28,29 @@ block content
         img(src='images/reflections-1.png')
 
       .content-unit.emissive-geometry
-        div
+        .unit-text
           h3 Emissive geometry
-          p
+          p In addition to point and directional lights, geometry can have an emissive material that causes it to emit light.
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
         
-        img(src='images/emissive-on.png')
+        .comparison-container#comparison-container
+          img.comparison(src='images/emissive-on.png')
+          img#comparison-image-overlay(src='images/emissive-off.png')
+          
+          .comparison-slider#comparison-slider
+
+      .content-unit.depth-of-field
+        .unit-text
+          h3 Depth of field
+          p A physical camera model combined with a separable circular convolution yields a nearly ground truth bokeh.
+          br
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+        
+        img(src='images/depth-of-field.png')
 
       .content-unit.tools
-        div
+        .unit-text
           h3 Tools
         
         //img(src='images/emissive-on.png')

@@ -16,6 +16,11 @@
     display: grid
     gap: 50px
 
+@media (min-width: 1000px)
+    .content-container-unit
+        margin: 50px
+        grid-template-columns: repeat(2, 1fr)
+
 .content-unit
     position: relative
     width: 100%
@@ -27,28 +32,22 @@
     background-color: colors.$whisper
     color: colors.$text-dark
 
-    div
-        z-index: 1
-
+    .unit-text
         padding: 1.5em
 
         h3
             font-size: 1.5em
 
         p
-            font-size: 1.1em
+            font-size: 1.1rem
 
     img
         position: absolute
         bottom: 0
         width: 100%
+        height: 400px
 
         object-fit: cover
-
-@media (min-width: 1000px)
-    .content-container-unit
-        margin: 50px
-        grid-template-columns: repeat(2, 1fr)
 
 .global-illumination
     background-color: #fffbe8
@@ -58,5 +57,19 @@
     color: white
 
 .emissive-geometry
-    background-color: #ff5f5f
-    color: white
+    .comparison-container
+        position: absolute
+        bottom: 0
+        width: 100%
+        height: 400px
+
+    .comparison-slider
+        z-index: 9
+        position: absolute
+        width: 4px
+        height: 100%
+        
+        cursor: ew-resize
+        background-color: colors.$whisper
+
+.depth-of-field
