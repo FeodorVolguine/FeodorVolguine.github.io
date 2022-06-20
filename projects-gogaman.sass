@@ -1,4 +1,4 @@
-@use 'colors'
+@use 'theme'
 @use 'base'
 
 .nav-secondary
@@ -9,7 +9,7 @@
         list-style: none
 
         a
-            color: colors.$text-dark
+            color: theme.$on-background-light
 
 .content-container-unit
     //margin: 50px
@@ -29,17 +29,18 @@
     display: flex
     flex-direction: column
     
-    background-color: colors.$whisper
-    color: colors.$text-dark
+    background-color: theme.$container-light
 
     .unit-text
         padding: 1.5em
 
         h3
             font-size: 1.5em
+            color: black
 
         p
             font-size: 1.1rem
+            color: theme.$on-container-light
 
     img
         position: absolute
@@ -50,11 +51,11 @@
         object-fit: cover
 
 .global-illumination
-    background-color: #fffbe8
+    //background-color: #fffbe8
 
 .reflection
-    background-color: black
-    color: white
+    background-color: theme.$background-dark
+    color: theme.$on-background-dark
 
 .emissive-geometry
     .comparison-container
@@ -70,6 +71,6 @@
         height: 100%
         
         cursor: ew-resize
-        background-color: colors.$whisper
+        background-color: theme.$container-light
 
 .depth-of-field

@@ -1,9 +1,9 @@
-@use 'colors'
+@use 'theme'
 @use 'base'
 
 .section-one
     h2
-        color: colors.$text-dark
+        color: theme.$on-background-light
 
     .cards
         display: flex
@@ -14,16 +14,16 @@
             width: auto
             padding: 0.75em
 
-            background-color: colors.$whisper
+            background-color: theme.$container-light
 
             h4
-                color: colors.$text-dark
+                color: black
 
             p
-                color: colors.$text-neutral
+                color: theme.$on-container-light
 
             li
-                color: colors.$text-neutral
+                color: theme.$on-container-light
 
 @media (min-width: 750px)
     .cards
@@ -34,17 +34,17 @@
             width: 250px !important
 
 .section-two
-    color: colors.$text-light
-    background-color: colors.$background-neutral
+    background-color: theme.$container-dark
+    color: theme.$on-container-dark
 
 .section-three
     h2
-        color: colors.$text-dark
+        color: theme.$on-background-light
 
     div
         margin-bottom: 1em
         padding: 0.75em
 
-        background-color: colors.$whisper
+        background-color: theme.$container-light
         p
-            color: colors.$text-neutral
+            color: theme.$on-container-light
