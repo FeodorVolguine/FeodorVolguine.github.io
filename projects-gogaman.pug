@@ -14,7 +14,7 @@ block content
           h3 Real-time global illumination
           p Light bouncing is simulated using a voxel cone tracing algorithm. This solution to GI requires no baking - light sources and geometry are fully dynamic.
           br
-          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced global illumination') View code &rsaquo;
         
         img(src='images/global-illumination.png')
 
@@ -23,16 +23,14 @@ block content
           h3 Reflections
           p Cone tracing through the voxel structure enables reflections of out-of-view objects, but at a fraction of the cost of raytracing triangle geometry.
           br
-          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced reflections') View code &rsaquo;
         
         img(src='images/reflections-1.png')
 
       .content-unit.emissive-geometry
         .unit-text
           h3 Emissive geometry
-          p In addition to point and directional lights, geometry can have an emissive material that causes it to emit light.
-          br
-          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+          p In addition to point and directional lights, geometry can emit light through the emissive material property.
         
         .comparison-container#comparison-container
           img.comparison(src='images/emissive-on.png')
@@ -45,7 +43,7 @@ block content
           h3 Depth of field
           p A physical camera model combined with a separable circular convolution yields a nearly ground truth bokeh.
           br
-          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs') View code &rsaquo;
+          a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Gogaman/Rendering/PerspectiveCamera.cpp' target='_blank' aria-label='View code for physical camera model') View code &rsaquo;
         
         img(src='images/depth-of-field.png')
 
@@ -54,3 +52,7 @@ block content
           h3 Tools
         
         //img(src='images/emissive-on.png')
+
+block scripts
+  script.
+    InitializeImageComparison();

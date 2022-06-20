@@ -15,12 +15,12 @@ html(lang='en')
       a.title(href='index.html')
         h1.thin Feodor Volguine
 
-      a.toggle-button#nav-main-toggle
+      a.toggle-button#nav-main-toggle(role='navigation' aria-expanded='false')
         span
         span
         span
 
-      nav.nav-main#nav-main
+      nav.nav-main#nav-main(role='navigation' aria-label='Main navigation')
         ul
           li
             a(href='career.html') Career
@@ -41,3 +41,4 @@ html(lang='en')
           strong.github-link Github
 
     script(src='client.js')
+    block scripts
