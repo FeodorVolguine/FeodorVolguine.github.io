@@ -21,7 +21,7 @@ block content
       .content-unit.reflection
         .unit-text
           h3 Reflections
-          p Cone tracing through the voxel structure enables reflections of out-of-view objects, but at a fraction of the cost of raytracing triangle geometry.
+          p Cone tracing through the voxel structure enables reflections, but at a fraction of the cost of raytracing triangle geometry.
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced reflections') View code &rsaquo;
         
@@ -55,4 +55,5 @@ block content
 
 block scripts
   script.
-    InitializeImageComparison();
+    InitializeImageComparison(true);
+    window.addEventListener('resize', () => { InitializeImageComparison(false); });

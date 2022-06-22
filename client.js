@@ -14,17 +14,23 @@ navToggle.addEventListener('click', () => {
     nav.classList.toggle('expanded');
 });
 
+//Image comparison
+let width = 0, height = 0;
+let isMouseHover = false;
+
 //Initialize image comparison
-function InitializeImageComparison()
+function InitializeImageComparison(registerEventListeners)
 {
     const overlay = document.getElementById('comparison-image-overlay');
-    let width = overlay.offsetWidth, height = overlay.offsetHeight;
+    width = overlay.offsetWidth, height = overlay.offsetHeight;
     overlay.style.clipPath = 'polygon(0 0, 50% 0, 50% 100%, 0 100%)';
     
-    let isMouseHover = false;
-    const comparisonContainer = document.getElementById('comparison-container');
-    comparisonContainer.addEventListener('mouseover', (event) => { isMouseHover = true; });
-    comparisonContainer.addEventListener('mouseleave', (event) => { isMouseHover = false; });
+    if(registerEventListeners)
+    {
+        const comparisonContainer = document.getElementById('comparison-container');
+        comparisonContainer.addEventListener('mouseover', (event) => { isMouseHover = true; });
+        comparisonContainer.addEventListener('mouseleave', (event) => { isMouseHover = false; });
+    }
     
     //Initialize slider
     let slider = document.getElementById('comparison-slider');
@@ -46,6 +52,9 @@ function InitializeImageComparison()
         }
     }
     
-    window.addEventListener('mousemove', UpdateComparison);
-    window.addEventListener('touchmove', UpdateComparison);
+    if(registerEventListeners)
+    {
+        window.addEventListener('mousemove', UpdateComparison);
+        window.addEventListener('touchmove', UpdateComparison);
+    }
 }

@@ -16,7 +16,7 @@
     display: grid
     gap: 50px
 
-@media (min-width: 1000px)
+@media (min-width: 1150px)
     .content-container-unit
         margin: 50px
         grid-template-columns: repeat(2, 1fr)
@@ -55,7 +55,12 @@
 
 .reflection
     background-color: theme.$background-dark
-    color: theme.$on-background-dark
+    .unit-text
+        h3
+            color: theme.$on-background-dark
+        
+        p
+            color: theme.$light-grey
 
 .emissive-geometry
     .comparison-container
