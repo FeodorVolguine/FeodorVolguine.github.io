@@ -7,7 +7,13 @@ block content
         li
           a(href='projects-gogaman.html') Gogaman
         li
+          a(href='projects-personal-website') This website
+        //li
           a(href='projects-workoutwatcher.html') Workout Watcher
+
+    article.project-description
+      h2 A physically based real-time rendering engine
+
     .content-container-unit
       .content-unit.global-illumination
         .unit-text
@@ -47,11 +53,34 @@ block content
         
         img(src='images/depth-of-field.png')
 
+      .content-unit.pbr
+        .unit-text
+          h3 Physically based rendering
+          p Direct lighting equations implement PBR princples. Disney's diffuse BRDF and GGX specular BRDF are used.
+
+      .content-unit.filmic-tonemapping
+        .unit-text
+          h3 ACES filmic tonemapping
+          p The mapping from high dynamic range values to low dynamic range mimicks a film camera response
+
       .content-unit.tools
         .unit-text
           h3 Tools
         
         //img(src='images/emissive-on.png')
+
+      .content-unit
+        .unit-text
+          h3 Miscellaneous &lpar;less impressive, but still neat&rpar;
+          ul
+            li
+              p Bloom around high-luminance image regions using an iterative separable Gaussian convolution
+            li
+              p Film grain using procedural noise which is modulated based on camera ISO parameter
+            li
+              p Various tonemapping options
+            li
+              p G-buffer albedo compression using edge-directed chrominance reconstruction
 
 block scripts
   script.
