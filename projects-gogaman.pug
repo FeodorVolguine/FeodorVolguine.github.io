@@ -1,5 +1,10 @@
 extends layout.pug
 
+mixin webp-image(name)
+  picture
+    source(srcset="images/" + name + ".webp" type="image/webp")
+    img(src="images/" + name + ".png" alt=name id!=attributes.id class!=attributes.class)
+
 block content
   section.section-one2
     .nav-secondary
@@ -22,7 +27,7 @@ block content
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced global illumination') View code &rsaquo;
         
-        img(src='images/global-illumination.png')
+        +webp-image('global-illumination')
 
       .content-unit.reflection
         .unit-text
@@ -31,7 +36,7 @@ block content
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced reflections') View code &rsaquo;
         
-        img(src='images/reflections-1.png')
+        +webp-image('reflections-1')
 
       .content-unit.emissive-geometry
         .unit-text
@@ -39,8 +44,8 @@ block content
           p In addition to point and directional lights, geometry can emit light through the emissive material property.
         
         .comparison-container#comparison-container
-          img.comparison(src='images/emissive-on.png')
-          img#comparison-image-overlay(src='images/emissive-off.png')
+          +webp-image('emissive-on').comparison
+          +webp-image('emissive-off')#comparison-image-overlay
           
           .comparison-slider#comparison-slider
 
@@ -51,7 +56,7 @@ block content
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Gogaman/Rendering/PerspectiveCamera.cpp' target='_blank' aria-label='View code for physical camera model') View code &rsaquo;
         
-        img(src='images/depth-of-field.png')
+        +webp-image('depth-of-field')
 
       .content-unit.pbr
         .unit-text
