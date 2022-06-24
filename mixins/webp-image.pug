@@ -9,7 +9,7 @@ mixin webp-image(name, widths=[])
     }
 
   picture
-    source(type="image/webp" srcset=(sourcesWebP.join(', ')))
-    img(src=directory + name + ".png" srcset=(sourcesPNG.join(', ')) alt=name id!=attributes.id class!=attributes.class)
+    source(type='image/webp' srcset=(sourcesWebP.join(', ')))
+    img(src=directory + name + '.png' srcset=(sourcesPNG.join(', ')) sizes='100vw' alt=name id!=attributes.id class!=attributes.class)
 
-    //loading="lazy" decoding="async"
+    //loading='lazy' decoding='async'
