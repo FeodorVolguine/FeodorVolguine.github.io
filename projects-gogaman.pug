@@ -1,11 +1,8 @@
 extends layout.pug
 
-mixin webp-image(name)
-  picture
-    source(srcset="images/" + name + ".webp" type="image/webp")
-    img(src="images/" + name + ".png" alt=name id!=attributes.id class!=attributes.class)
-
 block content
+  include mixins/webp-image.pug
+
   section.section-one2
     .nav-secondary
       ul
@@ -27,7 +24,7 @@ block content
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced global illumination') View code &rsaquo;
         
-        +webp-image('global-illumination')
+        +webp-image('global-illumination', [1905, 953, 635, 477, 381, 318])
 
       .content-unit.reflection
         .unit-text
@@ -36,7 +33,7 @@ block content
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced reflections') View code &rsaquo;
         
-        +webp-image('reflections-1')
+        +webp-image('reflections-1', [1915, 958, 639, 479, 383, 320])
 
       .content-unit.emissive-geometry
         .unit-text
@@ -44,8 +41,8 @@ block content
           p In addition to point and directional lights, geometry can emit light through the emissive material property.
         
         .comparison-container#comparison-container
-          +webp-image('emissive-on').comparison
-          +webp-image('emissive-off')#comparison-image-overlay
+          +webp-image('emissive-on', [1920, 960, 640, 480, 384, 320]).comparison
+          +webp-image('emissive-off', [1920, 960, 640, 480, 384, 320])#comparison-image-overlay
           
           .comparison-slider#comparison-slider
 
@@ -56,7 +53,7 @@ block content
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Gogaman/Rendering/PerspectiveCamera.cpp' target='_blank' aria-label='View code for physical camera model') View code &rsaquo;
         
-        +webp-image('depth-of-field')
+        +webp-image('depth-of-field', [1512, 756, 504, 378, 303])
 
       .content-unit.pbr
         .unit-text
