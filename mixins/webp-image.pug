@@ -1,4 +1,4 @@
-mixin webp-image(name, widths=[])
+mixin webp-image(name, widths, sizes)
   -
     let directory = 'images/' + name + '/';
     let sourcesWebP = [], sourcesPNG = [];
@@ -10,6 +10,6 @@ mixin webp-image(name, widths=[])
 
   picture
     source(type='image/webp' srcset=(sourcesWebP.join(', ')))
-    img(src=directory + name + '.png' srcset=(sourcesPNG.join(', ')) sizes='100vw' alt=name id!=attributes.id class!=attributes.class)
+    img(src=directory + name + '.png' srcset=(sourcesPNG.join(', ')) sizes=sizes alt=name id!=attributes.id class!=attributes.class)
 
     //loading='lazy' decoding='async'
