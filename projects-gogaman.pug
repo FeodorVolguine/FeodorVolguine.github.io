@@ -59,12 +59,12 @@ block content
       .content-unit.pbr
         .unit-text
           h3 Physically based rendering
-          p Direct lighting equations implement PBR princples. Disney's diffuse BRDF and GGX specular BRDF are used.
+          p Direct lighting equations implement PBR princples using physical light units and modern bidirectional reflectance distribution functions; Disney's diffuse BRDF and GGX specular BRDF.
 
       .content-unit.filmic-tonemapping
         .unit-text
-          h3 ACES filmic tonemapping
-          p The mapping from high dynamic range values to low dynamic range mimicks a film camera response
+          h3 Filmic post-processing
+          p ACES filmic tonemapping maps high dynamic range values to low dynamic range mimicks a film camera response.
 
       .content-unit.tools
         .unit-text
@@ -77,13 +77,13 @@ block content
           h3 Miscellaneous features
           ul
             li
+              p G-buffer albedo compression using edge-directed chrominance reconstruction
+            li
               p Bloom around high-luminance image regions using an iterative separable Gaussian convolution
             li
               p Film grain using procedural noise which is modulated based on camera ISO parameter
             li
               p Various tonemapping options
-            li
-              p G-buffer albedo compression using edge-directed chrominance reconstruction
 
 block scripts
   script.
