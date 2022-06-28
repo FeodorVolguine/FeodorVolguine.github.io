@@ -15,11 +15,12 @@ block content
 
     article.project-description
       h2 A physically based real-time rendering engine
+      p 
 
     .content-container-unit
       .content-unit.global-illumination
         .unit-text
-          h3 Real-time global illumination
+          h3 Global illumination
           p Light bouncing is simulated using a voxel cone tracing algorithm. This solution to GI requires no baking - light sources and geometry are fully dynamic.
           br
           a.link(href='https://github.com/FeodorVolguine/Gogaman/blob/master/Gogaman/src/Platform/Vulkan/GL_Shaders/voxelConeTracing2.fs' target='_blank' aria-label='View code for voxel cone traced global illumination') View code &rsaquo;
@@ -73,7 +74,7 @@ block content
 
       .content-unit
         .unit-text
-          h3 Miscellaneous &lpar;less impressive, but still neat&rpar;
+          h3 Miscellaneous features
           ul
             li
               p Bloom around high-luminance image regions using an iterative separable Gaussian convolution
