@@ -53,6 +53,18 @@ strong
 .p-size-small
     font-size: 0.8rem
 
+::-webkit-scrollbar
+    width: 12px
+
+::-webkit-scrollbar-track
+    background: theme.$light-grey
+
+::-webkit-scrollbar-thumb
+    background: theme.$comet
+
+    &:hover
+        background: theme.$paynes-grey
+
 .base-container
     padding: 3em 1em 3em 1em
 
@@ -127,9 +139,9 @@ header
                     letter-spacing: 0.075em
                     color: theme.$mountbatten-pink
 
-                a:hover
-                    border-bottom: 2px solid theme.$mountbatten-pink
-                    color: theme.$mountbatten-pink
+                    &:hover
+                        border-bottom: 2px solid theme.$mountbatten-pink
+                        color: theme.$mountbatten-pink
 
     .nav-main.expanded
         height: 200px
