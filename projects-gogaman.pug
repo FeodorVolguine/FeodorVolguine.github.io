@@ -13,9 +13,14 @@ block content
         li
           a(href='projects-workoutwatcher.html') Workout Watcher
 
-    article.project-description
-      h2.thin GOGAMAN
-      h3 A physically based, real-time rendering engine
+    article.base-container.project-description
+      h2 GOGAMAN
+      h3 A physically based, real-time rendering engine.
+      p Gogaman aims to implement many state-of-the-art rendering technologies while maintaining a clean, medium-sized codebase.
+      br
+      p It is written primarily in C++. Currently, most of the rendering features are implemented in GLSL with an OpenGL backend. With the completion of the platform-agnostic Render Hardware Interface &lpar;RHI&rpar;, they will soon be re-written in FlexShader - a custom shader language/compiler purpose-built for Gogaman.
+      br
+      p The transition from OpenGL to the modern RHI is significantly eased by the render graph system, which automates and optimizes GPU resource allocations/deallocations and synchronization. However, full adoption is only possible once 3D textures are implemented in the Vulkan backend and the FlexShader compiler is finalized.
 
     .content-container-unit
       .content-unit.global-illumination
@@ -64,12 +69,12 @@ block content
         .code
           script(src="https://gist.github.com/FeodorVolguine/3e09c3207339cf297f8cff205bbb1d4c.js")
 
-      .content-unit.filmic-tonemapping
+      //.content-unit.filmic-tonemapping
         .unit-text
           h3 Filmic post-processing
           p ACES filmic tonemapping maps high dynamic range values to low dynamic range mimicks a film camera response.
 
-      .content-unit.tools
+      //.content-unit.tools
         .unit-text
           h3 Tools
         
