@@ -1,0 +1,6 @@
+mixin nav-item(title, url)
+    li
+      if active == title
+        a(class='active', style={pointerEvents: 'none'})= title
+      else
+        a(href=url)= title

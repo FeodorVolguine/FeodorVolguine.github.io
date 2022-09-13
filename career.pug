@@ -1,5 +1,8 @@
 extends layout.pug
 
+block nav
+  - var active = "Career"
+
 block content
   section.section-one.base-container
     h2 EXPERIENCE
@@ -8,37 +11,39 @@ block content
         div
           h3
             strong OTTclean Commercial Cleaning Services - Web Designer/Developer
-          h4.thin 369 Kinghorn Crescent &#40;Remote&#41;
+          h4.thin Ottawa, Canada &#40;Contractual&#41;
           p.p-size-small.thin OCTOBER 2021 - FEBRUARY 2022
           ul
             li
-              p Designed and developed company front page &lpar;www.ottclean.com&rpar; and pages for 4 company services
+              p Designed and developed company website.
             li
-              p Built responsive, functional user interfaces with HTML and CSS
+              p Built responsive, functional user interfaces with HTML and CSS.
             li
-              p Implemented backend functionality to store and notify via email whenever a price quote is requested using Javascript and Node.js
+              p Implemented backend SMTP and storage functionality in Javascript/Node.js.
         div
           h3
-            strong Secure City Solutions — Software Testing Engineer
-          h4.thin 135 Michael Cowpland Dr, Ottawa, ON
+            strong Secure City Solutions — Software Test Engineer
+          h4.thin Ottawa, Canada &#40;Full-time&#41;
           p.p-size-small.thin JUNE 2019 - AUGUST 2019
           ul
             li
-              p Developed and documented software application testing plans, then executed and analyzed them
+              p Developed, executed, and analyzed software application testing plans.
             li
-              p Identified, reported, and proposed solutions to technical product defects
+              p Remotely troubleshooted customers and colleagues with software, hardware, and networking issues.
             li
-              p Remotely troubleshooted clients/colleagues with software, hardware, and networking issues
+              p Created a pre-configured Linux image with usage documentation which accelerated deployment of OS and product software on new hardware units by 400%.
+            li
+              p Identified and proposed software code solutions to technical product defects.
         div
           h3
-            strong Nokia — Cooperative Education Student
-          h4.thin 600 March Rd, Ottawa, ON
+            strong Nokia — Cooperative Education
+          h4.thin Ottawa, Canada &#40;Student&#41;
           p.p-size-small.thin SEPTEMBER 2017 - JANUARY 2018
           ul
             li
-              p Assembled prototype and production routers according to specifications
+              p Assembled prototype routers, networking devices, and server fans in lab according to mechanical design specifications.
             li
-              p Expanded internal internet infrastructure with network engineers
+              p Installed fiber optic cabling to expand internal internet infrastructure for new servers.
 
   section.section-two
     .base-container
@@ -48,10 +53,10 @@ block content
       p 3D modeling, lighting, texturing, rendering, post-processing
       br
       strong Programming languages
-      p Python 3, C, C++, HTML, CSS/SASS, JavaScript, TypeScript, Java, GLSL, HLSL
+      p Python, C, C++, HTML, CSS/SASS, JavaScript, TypeScript, Java, GLSL
       br
-      strong Tools
-      p Node.js, React Native, Microsoft Azure, Git, Vulkan, OpenGL, Blender, Adobe Photoshop
+      strong Tools/Frameworks
+      p Node.js, React Native, Spring, Microsoft Azure, GIT, Vulkan, OpenGL, Blender, Adobe Photoshop
 
   section.section-three.base-container
     h2 EDUCATION
@@ -69,12 +74,17 @@ block content
       h3.thin 5115 Kanata Ave, Ottawa, ON
 
   section.base-container.section-four
-      h2 CERTIFICATIONS
+      h2 CERTIFICATIONS / HONORS
       br
       div
         h3
           strong Microsoft Azure Fundamentals AZ-900
         h3.thin Credential ID: 993569895
+
+      div
+        h3
+          strong Microsoft Azure AI Fundamentals AI-900
+        h3.thin Credential ID: I408-7178
 
       div
         h3

@@ -20,11 +20,21 @@ html(lang='en')
         span
         span
 
+      block nav
+        - var active = 'Home'
+
+      include mixins/nav-item.pug
+
       nav.nav-main#nav-main(role='navigation' aria-label='Main navigation')
         ul
-          li
+          +nav-item('Home', 'index.html')
+          +nav-item('Career', 'career.html')
+          +nav-item('Projects', 'projects-gogaman.html')
+          //li
+            a(href='index.html' class=(name === "")) Home
+          //li
             a(href='career.html') Career
-          li
+          //li
             a(href='projects-gogaman.html') Projects
           //li
             a(href='contact.html') Contact
